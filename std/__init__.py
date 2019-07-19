@@ -1,4 +1,2 @@
-from .stdin import piped_in
-from . import ansi
-from .out import puts
-from .clipboard import copy, paste
+from std._pipes import puts as out, piped_in as in_
+from std.clipboard import copy, paste

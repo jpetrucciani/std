@@ -14,9 +14,9 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = "std"
 DESCRIPTION = "stdout (and friends), for humans."
-URL = "https://github.com/kennethreitz/std"
-EMAIL = "me@kenethreitz.org"
-AUTHOR = "Kenneth Reitz"
+URL = "https://github.com/jpetrucciani/std"
+EMAIL = "jacobi@mimirhq.com"
+AUTHOR = "Kenneth Reitz, Jacobi Petrucciani"
 REQUIRES_PYTHON = ">=3.6.0"
 VERSION = None
 
@@ -118,6 +118,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],

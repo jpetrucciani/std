@@ -1,16 +1,16 @@
 import sys
 
-if sys.platform == 'darwin':
-    from .darwin import *
+if sys.platform == "darwin":
+    from std.clipboard.darwin import copy, paste
 
-elif sys.platform == 'win32':
+elif sys.platform == "win32":
     try:
-        from .win import *
+        from std.clipboard.win import copy, paste
     except ImportError:
-        from .tkinter import *
+        from std.clipboard.tkinter import copy, paste
 
-elif sys.platform == 'cli':
-    from .cli import *
+elif sys.platform == "cli":
+    from std.clipboard.cli import copy, paste
 
 else:
-    from .x11 import *
+    from std.clipboard.x11 import copy, paste
